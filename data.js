@@ -1,12 +1,21 @@
 const namaSaya = "dhika";
-let usiaSaya = 20;
+let usiaSaya = 19;
 
 
 function generateBiodata() {
-    console.log(`nama saya ${namaSaya} dan usia saya ${usiaSaya}`);
+    if (usiaSaya > 10 && usiaSaya < 20) {
+     // ini adalah kondisi pertama
+     console.log('anda remaja');
+    } else if (usiaSaya > 18 && usiaSaya < 30) {
+        console.log('anda dewasa')
+    } else {
+     // ini adalah kondisitdk terpenuhi
+     console.log('wah elu jenis yang mana yak');
+    }
+
 }
 
-// console.log(namaSaya)
-// console.log(usiaSaya)
+
+
 
 generateBiodata();
