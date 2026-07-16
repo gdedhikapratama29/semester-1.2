@@ -1,20 +1,30 @@
 const namaSaya = "dhika";
-let usiaSaya = 19;
+let usiaSaya = 15;
 
+let biodata = document.getElementById('biodata');
+
+console.log(biodata);
 
 function generateBiodata() {
+
+    let generasi;
+
     if (usiaSaya > 10 && usiaSaya < 20) {
-     // ini adalah kondisi pertama
-     console.log('anda remaja');
+        generasi = 'generasi muda';
     } else if (usiaSaya > 18 && usiaSaya < 30) {
-        console.log('anda dewasa')
+        generasi = 'generasi dewasa';
+    } else if ( usiaSaya >= 30) {
+        generasi = 'generasi tua';
+    } else if(usiaSaya > 2 && usiaSaya < 10) {
+        generasi = 'generasi anak';
     } else {
      // ini adalah kondisitdk terpenuhi
-     console.log('wah elu jenis yang mana yak');
+        generasi = 'generasi bayi';
     }
 
-}
+    return  biodata.innerHTML = generasi;
 
+}
 
 
 
